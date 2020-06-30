@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Credit-card</title>
+  <link rel="stylesheet" href="credit-card.css">
+</head>
+<body>
+  <main>
+    <div class="credit-card">
+      <img src="/img/mypic.png" alt="cc-img" width="50px" height="50px">
+      <h3>DISCOVER</h3>
+      <label for="card-number" class="card-number">6011 1154 2489 8904</label>
+      <div id="card-holder">
+        <p class="card-holder">Card Holder</p>
+        <label for="card-name" class="card-name">Card Holder name</label>
+      </div>
+      <div id="expires">
+        <p class="expires">Expires</p>
+        <label for="expiry-date" class="expiry-date">MM/YY</label>
+      </div>
+    </div>
+    <div class="cc-input">
+      <form action="">
+        <div class="card-main-info">
+          <label for="card-number">Card Number</label>
+          <input type="text" id="card-number"><br>
+
+          <label for="card-name">Card Name</label>
+          <input type="text" id="card-name"><br>
+        </div>
+        
+        <div class="expiry-wrapper">
+          <div class="expiry">
+            <label for="expiry">Expiration Date</label><br>
+            <input type="date" value="Month" id="expiry">
+            <input type="date" value="Year">
+          </div>
+          <div class="cvv">
+            <label for="cvv">CVV</label>
+            <input type="text" id="cvv">
+          </div>
+        </div>
+        <br>
+        <input type="submit" value="Submit">
+      </form>
+    </div>
+  </main>
+</body>
+</html>

@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  font: 1em / 1.2 Courier, sans-serif;
+  margin: auto;
+}
+
+/* credit-card */
+.credit-card {
+  color: #ffffff;
+  border: solid 1px #333333;
+  width: 18rem;
+  margin: auto;
+  padding: 1em;
+  border-radius: .2em;
+  background: conic-gradient( 
+    #bb0505 6deg, #f09307 6deg 18deg, #dfdf03 18deg 45deg, 
+    #005a00 45deg 110deg, #030347 110deg 200deg, #000000 200deg);
+  box-shadow: #555555 3px 3px 5px;
+  display: grid;
+  grid-template-columns: 1fr;
+  position: relative;
+  top: 50px;
+}
+img{
+  background-color: #555555;
+}
+h3,p,label {
+  padding: .2em 0 .2em 0;
+}
+.credit-card h3 {
+  grid-row: 1;
+  grid-column: 2;
+}
+
+#card-holder {
+  grid-row: 3;
+  grid-column: 1;
+}
+#expires {
+  grid-row: 3;
+  grid-column: 2;
+}
+.card-number {
+  margin: .8em 0 .8em 0;
+}
+#card-holder>p,
+#expires>p {
+  color: #7c7c7c;
+  font-size: .8em;
+}
+
+/* INPUT */
+.cc-input {
+  display: flex;
+  flex-flow: row;
+  border: #333 solid 1px;
+  max-width: 25rem;
+  padding-top: 5em;
+  padding: 5em 2em 2em 2em;
+  display: block;
+  margin: auto;
+  border-radius: .3em;
+}
+.cc-input input {
+  width: 95%;
+  line-height: 1.2em;
+  font-size: 1.5em;
+  margin: 10px 0 0 0;
+  padding: .2em;
+  border-radius: .2em;
+  display: block;
+}
+input[type=date], #cvv {
+  width: 100%;
+}
+input[type=date] {
+  display: inline-block;
+  width: 43%;
+}
+.expiry, .cvv {
+  width: 100%;
+}
+.expiry-wrapper {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
